@@ -26,7 +26,7 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                                             </h1>
                                         </div>
                                         <p class="px-4 mb-10 text-base leading-7 text-gray-700">
-                                            neki text neki text neki text neki text neki text neki text neki text neki text neki text neki text neki text neki text neki text
+                                            At Premium Present Balkan, we are the forefront of entertainment, offering an unparalleled online gambling experience that sets us apart in the heart of the Balkans. Our platform is a vibrant hub for enthusiasts seeking the thrill of victory and the excitement of strategic play.
                                         </p>
                                         <div class="flex flex-wrap items-center">
                                             <div class="w-full px-4 mb-6 sm:w-1/2 md:w-1/2 lg:mb-6">

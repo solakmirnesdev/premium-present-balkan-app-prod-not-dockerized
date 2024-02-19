@@ -16,12 +16,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return Redirect::route('login');
 });
 
 Route::middleware([
@@ -42,4 +37,14 @@ Route::middleware([
     Route::get('/about-us', function () {
         return Inertia::render('AboutUs');
     })->name('aboutus');
+});
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/apply-for-coach', function () {
+        return Inertia::render('ApplyForCoach');
+    })->name('applyforcoach');
 });
